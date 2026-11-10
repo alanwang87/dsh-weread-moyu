@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.gh-token
+*.log
+.DS_Store
+Thumbs.db

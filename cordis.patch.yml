@@ -1,0 +1,4 @@
+# dsh-weread-moyu bundle patch: inserts the plugin into a profile's layer stack.
+- insert:
+    - id: weread-moyu
+      name: 'dsh-weread-moyu'

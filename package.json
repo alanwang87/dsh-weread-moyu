@@ -1,0 +1,47 @@
+{
+  "name": "dsh-weread-moyu",
+  "version": "0.1.8",
+  "description": "微信读书当背景 — DeepSeek Harness 摸鱼插件：扫码登录微信读书，把书页正文以低对比度文字层垫在 Web GUI 背后。",
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "client",
+    "cordis.patch.yml"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanwang87/dsh-weread-moyu.git"
+  },
+  "homepage": "https://github.com/alanwang87/dsh-weread-moyu#readme",
+  "bugs": {
+    "url": "https://github.com/alanwang87/dsh-weread-moyu/issues"
+  },
+  "author": "alanwang87",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "engines": {
+    "dsh": ">=0.2.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [],
+      "immediately": true
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "weread",
+    "微信读书"
+  ],
+  "license": "MIT"
+}
